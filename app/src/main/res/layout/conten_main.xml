@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewNumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="100sp"
+            android:maxLines="1"
+            android:textSize="50sp"
+            android:maxLength="20"/>
+
+
+    </RelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/CalBut"
+            android:onClick="btnClicked"
+            android:text="1"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/CalBut"
+            android:layout_alignTop="@id/btn1"
+            android:layout_toRightOf="@id/btn1"
+            android:onClick="btnClicked"
+            android:text="2"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/CalBut"
+            android:layout_alignTop="@id/btn2"
+            android:layout_toRightOf="@id/btn2"
+            android:onClick="btnClicked"
+            android:text="3"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn1"
+            android:layout_below="@id/btn1"
+            android:onClick="btnClicked"
+            android:text="4"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn2"
+            android:layout_below="@id/btn2"
+            android:onClick="btnClicked"
+            android:text="5"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn3"
+            android:layout_below="@id/btn3"
+            android:onClick="btnClicked"
+            android:text="6"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn4"
+            android:layout_below="@id/btn4"
+            android:onClick="btnClicked"
+            android:text="7"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn5"
+            android:layout_below="@id/btn5"
+            android:onClick="btnClicked"
+            android:text="8"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn6"
+            android:layout_below="@id/btn6"
+            android:onClick="btnClicked"
+            android:text="9"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/CalBut"
+            android:layout_alignTop="@id/btn3"
+            android:layout_toRightOf="@id/btn3"
+            android:onClick="btnClicked"
+            android:text="+"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/CalBut"
+            android:layout_alignTop="@id/btn6"
+            android:layout_toRightOf="@id/btn6"
+            android:onClick="btnClicked"
+            android:text="-"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btnMulti"
+            style="@style/CalBut"
+            android:layout_alignTop="@id/btn9"
+            android:layout_toRightOf="@id/btn9"
+            android:onClick="btnClicked"
+            android:text="*"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn7"
+            android:layout_below="@id/btn7"
+            android:onClick="btnClicked"
+            android:text="0"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btnDOT"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn8"
+            android:layout_below="@id/btn8"
+            android:onClick="btnClicked"
+            android:text="."
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btnEQ"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btn9"
+            android:layout_below="@id/btn9"
+            android:onClick="btnClicked"
+            android:text="="
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalBut"
+            android:layout_alignTop="@id/btnEQ"
+            android:layout_toRightOf="@id/btnEQ"
+            android:onClick="btnClicked"
+            android:text="/"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/CalBut"
+            android:layout_alignRight="@id/btnDivide"
+            android:layout_below="@id/btnDivide"
+            android:onClick="btnClicked"
+            android:text="C"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="100%" />
+
+
+
+
+
+
+
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>
